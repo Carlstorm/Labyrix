@@ -69,8 +69,10 @@ function Process(dataitem) {
         if (document.getElementsByClassName("squerething")[h].classList.contains("wall")) {
             document.getElementsByClassName("squerething")[h].classList.remove("wall")
         } else if (document.getElementsByClassName("squerething")[h].classList.contains("goalbox")) {
+            goalid2 = null;
             document.getElementsByClassName("squerething")[h].classList.remove("goalbox")
         } else if (document.getElementsByClassName("squerething")[h].classList.contains("activeboxstart")) {
+            startpos = null;
             document.getElementsByClassName("squerething")[h].classList.remove("activeboxstart")
         }
     }
