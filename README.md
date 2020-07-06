@@ -1,2 +1,0 @@
-# Labyrix
-portefoliepart
