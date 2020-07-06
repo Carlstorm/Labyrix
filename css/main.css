@@ -1,0 +1,284 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: url(/texture.jpg);
+    background-repeat: repeat;
+}
+
+nav {
+    height: max-content;
+    width: 100%;
+    box-shadow: 0px 1px 5px 0px rgb(0, 0, 0);
+    z-index: 99999999;
+    background: rgb(56, 56, 56);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav div{
+height: 75px;
+}
+
+nav p{
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+    }
+
+section {
+    box-shadow: inset 0px 0px 100vw 0px rgba(0, 0, 0, 0.33);
+    width: 100%;
+    height: max-content;
+    background: white; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.squerething {
+    box-shadow: inset 0px 0px 0.1vw 0.01vw rgba(0,0,0,0.3);
+    width: 1vw;
+    height: 1vw;
+    /* background: rgb(255, 255, 255); */
+    pointer-events: painted;
+    mix-blend-mode: multiply;
+    transform: translateZ(1);
+    background: radial-gradient(circle, rgb(178, 240, 255, 0) 10%, rgb(158, 236, 255, 0) 50%, rgba(28, 183, 255, 0) 100%);
+}
+
+.squerething:hover {
+    box-shadow: inset 0px 0px 0vw 1vw rgba(0,0,0,0.2);
+}
+
+.activebox {
+    /* background: rgb(130, 230, 255); */
+    /* opacity: 0.75; */
+    /* box-shadow: inset 0px 0px 0.1vw 0.01vw rgba(0,0,0,0.0); */
+    background: radial-gradient(circle, rgb(178, 240, 255) 10%, rgb(158, 236, 255) 50%, rgba(28, 183, 255, 0.595) 100%);
+}
+
+
+.activeboxstart{
+    box-shadow: 0px 0px 0.3vw 0.05vw rgba(0, 0, 0, 0.137);
+    transform: scale(1.5);
+    background: rgb(130, 255, 182);
+    background: radial-gradient(circle, rgb(101, 255, 165) 20%, rgb(0, 240, 100) 100%);
+}
+
+.activebox69 {
+    opacity: 0;
+    transition: 1s;
+    opacity: 1;
+    border-radius: 1vw;
+    transform: scale(0.7);
+    background: rgb(130, 255, 182);
+    box-shadow: 0px 0px 0.3vw 0.05vw rgba(0, 172, 224, 0.0);
+}
+
+.wall {
+    box-shadow: 0px 0px 0.3vw 0.05vw rgba(0, 172, 224, 0.0);
+    background: rgb(63, 63, 63);
+    transition: 0s;
+}
+
+.goalbox {
+    box-shadow: 0px 0px 0.3vw 0.05vw rgba(0, 0, 0, 0.137);
+    transform: scale(1.5);
+    background: red;
+    background: radial-gradient(circle, #ff5125 20%, red 100%);
+}
+
+.dottowits {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px 0vw rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: 99999;
+    height: 50%;
+    width: 50%;
+}
+
+#knap{
+    height: 100%;
+    width: 200px;
+}
+
+
+#select1wrap {
+    margin: 0 20px 0 20px !important;
+    width: max-content;
+}
+
+#Sbutwrap1 {
+    height: 60%;
+    display: flex;
+}
+
+#Stext1, #tooltextwrap, #labtextwrap {
+    height: auto;
+}
+
+#Stext1 p {
+    text-align: center;
+    color: rgba(245, 245, 245, 0.753);
+}
+
+#tooltextwrap p {
+    text-align: center;
+    color: rgba(245, 245, 245, 0.753);
+}
+
+#labtextwrap p {
+    text-align: left;
+    color: rgba(245, 245, 245, 0.753);
+}
+
+
+#xtextline {
+    width: 100%;
+    height: 0px;
+    background: rgb(49, 173, 204);
+    margin-bottom: 5px;
+}
+
+#tools {
+    width: max-content;
+    margin: 0 20px 0 20px;
+}
+
+#resetbutt {
+    margin: 0 10px 0 0 !important;
+}
+
+#labpresetsNo {
+    width: max-content;
+    margin: 0 40px 0 20px;
+}
+
+#labpresetsNo svg {
+    height: 100%;
+}
+
+#ButMode1 {
+    margin-left: 0px;
+}
+
+#labwrap {
+    height: 60%;
+    display: flex;
+    width: max-content;
+    }
+
+    #pcontrolwrap {
+        display: flex;
+        height: 40px;
+        width: max-content;
+        margin: 16px 0 0 25px;
+    }
+    
+    #pcontrolwrap div{
+        position: relative;
+        cursor: pointer;
+        width: auto;
+        height: 100%;
+        width: max-content !important;
+        margin: 0px 10px 0 10px;
+        fill: rgba(255, 255, 255, 0.897);
+        transition: 0.4s;
+    }
+
+    #pcontrolwrap div:hover{
+        fill: rgb(49, 173, 204);
+    }
+
+    #pcontrolwrap div svg{
+        height: 100%;
+        }
+
+#sletknap {
+    position: relative;
+    height: 100%;
+    width: 50px !important;
+    cursor: pointer;
+    width: auto;
+    margin-left: 5px;
+}
+
+
+
+#toolwrap {
+height: 60%;
+display: flex;
+width: auto;
+}
+
+#hline {
+    height: 100%;
+    width: 3px;
+    background: rgb(49, 173, 204);
+}
+
+#programcontrol {
+    display: flex;
+    flex-grow: 1;
+    background: rgb(20,20,20);
+}
+
+
+.tool1 {
+    position: relative;
+    height: 100%;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    width: auto;
+}
+
+.tool1 svg{
+    height: 100%;
+}
+
+
+
+#ButMode1, #ButMode2, #ButMode3 {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+
+#ButMode1 svg, #ButMode2 svg, #ButMode3 svg {
+    height: 100%;
+}
+
+#hehehehe:hover {
+    fill:rgb(21, 255, 0) !important;
+}
+
+#breakbarthing {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0) 80%, rgba(0,0,0,1) 100%);
+    height: 25px;
+    width: 100%;
+}
+
+.st0, .st1 {
+    transition: 0.2s;
+    stroke-width: 6px;
+    stroke: rgb(34,193,195);
+    fill: rgb(30, 30, 30);
+    
+}
+
+img {
+    height: 75px;
+    transform: translateX(-7.5%);
+}
