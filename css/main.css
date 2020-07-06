@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background: url(/texture.jpg);
+    background: url(../texture.jpg);
     background-repeat: repeat;
 }
 

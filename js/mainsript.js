@@ -82,11 +82,11 @@ function Process(dataitem) {
     clearboard();
     let preset = null;
     if (event.target.value == "pre1") {
-        preset="../presets/preset2.json"
+        preset="./presets/preset2.json"
     } else if (event.target.value == "pre2") {
-        preset="../presets/preset1.json"
+        preset="./presets/preset1.json"
     } else if (event.target.value == "pre3") {
-        preset="../presets/preset3.json"
+        preset="./presets/preset3.json"
     } else {
         preset = null;
     }
